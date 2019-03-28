@@ -50,100 +50,99 @@ table {
 
 /* Set every element's box-sizing to border-box */
 
-@white-color :black;
+@white-color :blue;
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html, body {
-	box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%; 
-  
+  background-color: lightgrey; 
 }
 
 .container {
-    width:800px;
-	margin: 20px auto;
-	font-size: 1.6rem;
-	background-color:crimson;
+  width:800px;
+  margin: 20px auto;
+  font-size: 1.6rem;
+  background-color:crimson;
 
-	@media(max-width:500px){
-		background-color:green;
-	}
-  }
+  @media(max-width:500px){
+	width:100%;
+	margin:0 auto;
+	background: green;
+  } 
+}
 
-  h1,  h3 ,h4, h5{
-	font-size:1rem;
-	color:@white-color;
-  }
+h1, h3, h4, h5 {
+  font-size:1rem;
+ color:
+ @white-color;
+}
 
-  p {
-	line-height: 1.25;
+p {
+  line-height: 1.25;
+  margin: 20px 0;
+  font-size: 1.8rem; 
+}
+
+header {
+  display:flex;
+  justify-content:center;
+
+  .navigation{
 	margin: 20px 0;
-	font-size: 1.8rem;
-	color:@white-color;
-  }
-
-  h2{
-	  color:@white-color;
-  }
-
-  header{
-	  display:flex;
+	padding: 20px 0; 
+	
+	@media (max-width:500px) {
+	  flex-direction: row;
 	  justify-content:center;
+	}
+	
+	 a {
+	  margin-left:30px; 
+	   color:@white-color; 
+	 }
+  }	  
 
 }
-	  
-	  
 
-	  nav{
-		margin: 20px 0;
-		padding: 20px 0; 
-	
-
-		  a{
-			 margin-left:30px; 
-			 color:@white-color; 
-		  }
-	  
-
-  }
-
-
-  .firstpic{
-	  height:200px;
-	  width:220px;
-	  margin-left:20px;
-	  
-  }
 
   .main-container {
 	   display:flex;
 	   flex-wrap:wrap;
 	   margin-top:20px;
 	   background-color:dodgerblue;
+	   @media(max-width:500px){
+	   display:flex;
+	   flex-wrap: wrap;
+	   }
 	   
+	   .firstpic{
+		height:200px;
+		width:220px;
+		margin-left:20px;	
+	   
+	   }
 	   .about{
-		   width:35%;
-		   margin-left:20px;
-		   p{
-			   font-size:2rem;
-			   padding:20px;
-			  margin-left:20px;
-			   
-		   }
+		   margin-top:30px;
+		   width:280px;
+		   
 	   }
   } 
 
   .description{
-	padding-left:20px;
-	margin-top:20px;
+	.navigation;
 	background-color:coral;
+	
+		@media(max-width: 500px){
+			width:100%;
+	}
          h2{
 			 
 			 margin-top:20px;
-	
+			 
 		 }
 
 
@@ -156,25 +155,44 @@ html, body {
 	padding:50px;
 	.section{
 		width:350px;
+		@media(max-width:500px){
+			width:49.5%;
+			
+		  }
 	}
+	
 }
 
-.footer{
-	.fa {
-		padding: 20px;
-		font-size: 30px;
-		width: 50px;
-		text-align: center;
-		text-decoration: none;
-		margin: 5px 2px;
-	  }
-	  
-	  .fa:hover {
-		  opacity: 0.7;
-	  }
-	  
-	  .fa-facebook {
-		background: #3B5998;
-		color: white;
-	  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
